@@ -29,7 +29,8 @@ http.createServer(function(req, res){
 			rem = sp[1]
 			//imp contains data i want
 			res.writeHead(200, {"Content-Type": "text/html"})
-			res.write(imp)
+			res.write(new Buffer(imp, 'binary'))
+			console.log(imp)
 			res.end()
 			imp=''
 		}
