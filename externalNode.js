@@ -4,6 +4,9 @@ var url = require('url')
 
 var globalSocket = new Array();
 
+// more comment here
+// and here too
+
 //The server that connects with internal Node.
 net.createServer(function(sock){
 	globalSocket.push(sock)
